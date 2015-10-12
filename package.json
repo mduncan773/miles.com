@@ -1,0 +1,21 @@
+{
+  "name": "miles.com",
+  "version": "0.0.1",
+  "description": "sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-html": "cp ./src/index.html ./build/index.html",
+    "build-js": "browserify ./src/index.js -o ./build/bundle.js",
+    "build": "npm run build-html && npm run build-js"
+  },
+  "author": "Miles Duncan <mduncan309@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0"
+  }
+}
